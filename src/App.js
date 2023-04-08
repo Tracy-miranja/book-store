@@ -11,6 +11,7 @@ function App() {
         <Route exact path="/" element={<Books />} />
         <Route path="/Categories" element={<Categories />} />
       </Routes>
+      <form />
     </>
   );
 }

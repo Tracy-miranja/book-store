@@ -1,4 +1,5 @@
 import React from 'react';
+import Form from './form';
 
 function Books() {
   const bookLists = [
@@ -46,7 +47,7 @@ function Books() {
           </li>
         ))}
       </ul>
-
+      <Form />
     </div>
   );
 }
