@@ -7,7 +7,7 @@ function Nav() {
       <h1>BOOKSTORE CMS</h1>
       <ul>
         <li>
-          <Link to="/">BOOKS</Link>
+          <Link to="/form">BOOKS</Link>
         </li>
         <li>
           <Link to="/Categories">CATEGORIES</Link>
