@@ -1,55 +1,62 @@
-import React from 'react';
-import Form from './form';
+import React, { useState } from 'react';
 
-function Books() {
-  const bookLists = [
+const BookList = () => {
+  const [books, setBooks] = useState([
     {
-      id: 1,
-      categories: 'Action',
-      Title: 'The Hunger Games',
-      Author: 'Suzanne-Collins',
+      item_id: 'item1',
+      title: 'The Great Gatsby',
+      author: 'John Smith',
+      category: 'Fiction',
     },
     {
-      id: 2,
-      categories: 'Horror',
-      Title: 'The Hunger Games',
-      Author: 'Suzanne-Collins',
+      item_id: 'item2',
+      title: 'Anna Karenina',
+      author: 'Leo Tolstoy',
+      category: 'Fiction',
     },
-  ];
+    {
+      item_id: 'item3',
+      title: 'The Selfish Gene',
+      author: 'Richard Dawkins',
+      category: 'Nonfiction',
+    },
+  ]);
+
+  const handleRemove = (id) => {
+    setBooks(books.filter((book) => book.item_id !== id));
+  };
+
   return (
     <div>
+      <h3>Book List:</h3>
       <ul>
-        {bookLists.map((bookList) => (
-          <li key={bookList.id}>
-            <div>
-              <div>
-                <h1>{bookList.categories}</h1>
-                <h2>{bookList.Title}</h2>
-                <h4>{bookList.Author}</h4>
-                <div>
-                  <button type="submit">comments</button>
-                  <button type="submit">Remove</button>
-                  <button type="submit">Edit</button>
-                </div>
-                <div>
-                  <div>
-                    <span className="sr-only" />
-                    <h1>64% completed</h1>
-                  </div>
-                  <div>
-                    <h3>CURRENT CHAPTER</h3>
-                    <h2>CHAPTER 17</h2>
-                    <button type="submit">UPDATE PROGRESS</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+        {books.map((book) => (
+          <li key={book.item_id}>
+            <p>
+              Title:
+              {' '}
+              {book.title}
+            </p>
+            <p>
+              Author:
+              {' '}
+              {book.author}
+            </p>
+            <p>
+              Category:
+              {' '}
+              {book.category}
+            </p>
+            <button type="button" onClick={() => handleRemove(book.item_id)}>
+              remove
+            </button>
+            <button type="submit">comment</button>
+            <button type="submit">comment</button>
           </li>
         ))}
       </ul>
-      <Form />
     </div>
   );
-}
+};
 
-export default Books;
+export default BookList;
