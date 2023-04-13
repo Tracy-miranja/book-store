@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook, removeBook } from '../redux/books/booksSlice';
+import MyComponent from './List';
 import BookList from './Books';
 
 const AddBookForm = () => {
@@ -30,6 +31,7 @@ const AddBookForm = () => {
 
   return (
     <>
+      <MyComponent />
       <BookList />
       <div>
         <div>
