@@ -51,7 +51,7 @@ const BookList = () => {
               remove
             </button>
             <button type="submit">comment</button>
-            <button type="submit">comment</button>
+            <button type="submit">Edit</button>
           </li>
         ))}
       </ul>

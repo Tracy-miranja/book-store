@@ -53,7 +53,7 @@ const AddBookForm = () => {
                 </p>
                 <button type="button" onClick={() => handleRemove(addedBook.id)}>remove</button>
                 <button type="submit">comment</button>
-                <button type="submit">comment</button>
+                <button type="submit">Edit</button>
               </li>
             ))}
           </ul>
