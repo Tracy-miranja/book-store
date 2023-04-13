@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook, removeBook } from '../redux/books/booksSlice';
+import MyComponent from './List';
 import BookList from './Books';
 
 const AddBookForm = () => {
@@ -30,6 +31,7 @@ const AddBookForm = () => {
 
   return (
     <>
+      <MyComponent />
       <BookList />
       <div>
         <div>
@@ -53,7 +55,7 @@ const AddBookForm = () => {
                 </p>
                 <button type="button" onClick={() => handleRemove(addedBook.id)}>remove</button>
                 <button type="submit">comment</button>
-                <button type="submit">comment</button>
+                <button type="submit">Edit</button>
               </li>
             ))}
           </ul>
