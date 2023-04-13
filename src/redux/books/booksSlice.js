@@ -18,7 +18,7 @@ export const fetchBooks = createAsyncThunk('books/fetchBooks', async () => {
 const booksSlice = createSlice({
   name: 'books',
   initialState: {
-    books: [],
+    Books: [],
     isLoading: false,
     error: undefined,
   },
