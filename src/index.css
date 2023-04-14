@@ -269,9 +269,9 @@ Navbar
 }
 
 .Current-Chapter {
-  width: 7.875rem;
+  width: auto;
   height: 1.125rem;
-  margin: 0.063rem 3.625rem 0 3.688rem;
+  margin: 0.063rem 0rem 0 3.688rem;
   opacity: 0.5;
   font-family: RobotoSlab, Arial, Helvetica, sans-serif;
   font-size: 0.813rem;
@@ -286,7 +286,7 @@ Navbar
 .Current-Lesson {
   width: auto;
   height: 1.313rem;
-  margin: 0.438rem 0.813rem 0.25rem 3.688rem;
+  margin: 0.438rem -10.0rem 0.25rem 3.688rem;
   font-family: RobotoSlab, Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 300;
