@@ -357,7 +357,7 @@ Navbar
   letter-spacing: normal;
   color: #4386bf;
   background-color: #fff;
-  border: 0px;
+  border: 0;
 }
 
 .Remove {
@@ -373,10 +373,9 @@ Navbar
   letter-spacing: normal;
   color: #4386bf;
   background-color: #fff;
-  border: 0px;
+  border: 0;
   border-right: 1px solid #e8e8e8;
   border-left: 1px solid #e8e8e8;
- 
 }
 
 .Edit {
@@ -393,7 +392,7 @@ Navbar
   color: #4386bf;
   background-color: #fff;
   border-color: #fff;
-  border: 0px;
+  border: 0;
   padding: 2px;
 }
 
@@ -417,6 +416,6 @@ Navbar
   box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
 }
 
-.profile{
+.profile {
   color: #307bbe;
 }
