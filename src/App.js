@@ -5,13 +5,13 @@ import AddBookForm from './components/form';
 
 function App() {
   return (
-    <>
+    <section className="container">
       <Nav />
       <Routes>
         <Route path="/form" element={<AddBookForm />} />
         <Route path="/Categories" element={<Categories />} />
       </Routes>
-    </>
+    </section>
   );
 }
 
