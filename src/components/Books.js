@@ -31,7 +31,7 @@ const BookList = () => {
 
   return (
     <div>
-      <ul>
+      <ul className="link">
         {books.map((book) => (
           <li key={book.item_id} className="Lesson-Panel">
             <div>

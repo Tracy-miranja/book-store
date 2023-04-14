@@ -116,7 +116,7 @@ const AddBookForm = () => {
               onChange={handleChange}
               className="Lesson-Panel2"
             />
-            <button type="submit" className="Rectangle-3">Add Book</button>
+            <button type="submit" className="Rectangle-3">ADD BOOK</button>
           </div>
         </form>
       </div>

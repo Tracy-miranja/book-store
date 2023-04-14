@@ -1,6 +1,6 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { Link } from 'react-router-dom';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { MdPerson } from 'react-icons/md';
 
 function Nav() {
