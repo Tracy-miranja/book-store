@@ -1,29 +1,10 @@
 body {
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, sans-serif;
 }
 
 code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+  font-family: Arial, sans-serif;
 }
 
 :root {
@@ -43,6 +24,7 @@ code {
   --small-screen-width: 90vw;
   --fixed-width: 50rem;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -61,31 +43,40 @@ h4 {
   line-height: 1.25;
   margin-bottom: 0.75rem;
 }
+
 h2 {
   font-size: 2rem;
 }
+
 h3 {
   font-size: 1.5rem;
 }
+
 h4 {
   font-size: 0.875rem;
 }
+
 p {
   margin-bottom: 1.25rem;
 }
+
 @media screen and (min-width: 800px) {
   h2 {
     font-size: 2.5rem;
   }
+
   h3 {
     font-size: 2rem;
   }
+
   h4 {
     font-size: 1rem;
   }
+
   body {
     font-size: 1rem;
   }
+
   h1,
   h2,
   h3,
@@ -93,6 +84,7 @@ p {
     line-height: 1;
   }
 }
+
 /* more global css */
 
 .btn {
@@ -109,13 +101,14 @@ p {
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
+
 .btn:hover {
   color: var(--clr-primary);
   background: var(--clr-primary-light);
 }
 
 /*
-=============== 
+===============
 Navbar
 ===============
 */
@@ -124,22 +117,22 @@ Navbar
   margin-top: 5rem;
 }
 
-.nav-container{
+.nav-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   border-bottom: 1px solid gray;
   border-bottom: #e5e5e5;
-    box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
-    padding: 5px;
-  
+  box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
+  padding: 5px;
 }
-.nav-container h1{
+
+.nav-container h1 {
   width: auto;
   height: 2.313rem;
   margin: 0.375rem 2.938rem 0.125rem 0;
   margin-left: 30px;
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -149,19 +142,19 @@ Navbar
   color: #0290ff;
 }
 
-.nav-container ul{
+.nav-container ul {
   display: flex;
   flex-direction: row;
   margin-left: 40px;
   text-decoration: none;
 }
 
-.nav-container ul li{
+.nav-container ul li {
   list-style: none;
   width: 3.688rem;
   height: 1rem;
   margin: 1.125rem 2.563rem 0.688rem 0;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
@@ -218,7 +211,7 @@ Navbar
   padding: 2rem 9.188rem 1.625rem 1.688rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: #ffffff;
+  background-color: #fff;
   display: flex;
   flex-direction: row;
 }
@@ -228,7 +221,7 @@ Navbar
   height: 1.125rem;
   margin: 0 2.438rem 0 0;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -242,7 +235,7 @@ Navbar
   width: 12.313rem;
   height: 1.813rem;
   margin: 0.188rem 20.188rem 0 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -256,7 +249,7 @@ Navbar
   width: 6.688rem;
   height: 1.188rem;
   margin: 0.25rem 0 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -272,7 +265,7 @@ Navbar
   margin: 0.75rem 0 0.563rem 3.688rem;
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
   border-radius: 3px;
-  background-color:#0290ff;
+  background-color: #0290ff;
 }
 
 .Current-Chapter {
@@ -280,7 +273,7 @@ Navbar
   height: 1.125rem;
   margin: 0.063rem 3.625rem 0 3.688rem;
   opacity: 0.5;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -291,10 +284,10 @@ Navbar
 }
 
 .Current-Lesson {
-  width:auto;
+  width: auto;
   height: 1.313rem;
   margin: 0.438rem 0.813rem 0.25rem 3.688rem;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 300;
   font-stretch: normal;
@@ -307,7 +300,7 @@ Navbar
 .Update-progress {
   width: 8.938rem;
   height: 1.125rem;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -315,14 +308,14 @@ Navbar
   line-height: normal;
   letter-spacing: 0.5px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 
 .-Percent-Complete {
   width: 4.25rem;
   height: 2.438rem;
   margin: 0.063rem 5.75rem 0 0.688rem;
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 2rem;
   font-weight: normal;
   font-stretch: normal;
@@ -337,7 +330,7 @@ Navbar
   height: 1.125rem;
   margin: 0.438rem 4.938rem 0.75rem 0.75rem;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
   font-weight: normal;
   font-stretch: normal;
@@ -346,7 +339,8 @@ Navbar
   letter-spacing: normal;
   color: var(--black-two);
 }
-.rating{
+
+.rating {
   display: flex;
   flex-direction: row;
 }
@@ -355,7 +349,7 @@ Navbar
   width: 4.563rem;
   height: 1.188rem;
   margin: 0.188rem 0.938rem 0.125rem 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -369,7 +363,7 @@ Navbar
   width: 3.375rem;
   height: 1.188rem;
   margin: 0.188rem 0.938rem 0.125rem 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -383,7 +377,7 @@ Navbar
   width: 1.688rem;
   height: 1.188rem;
   margin: 0.188rem 18.625rem 0.125rem 1.063rem;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -393,8 +387,7 @@ Navbar
   color: var(--cool-blue);
 }
 
-
-.form{
+.form {
   display: flex;
   flex-direction: column;
 }
@@ -407,10 +400,9 @@ Navbar
   margin-left: 95px;
 }
 
-.container{
+.container {
   width: 100%;
   align-content: center;
   border-bottom: #e5e5e5;
-    box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
+  box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
 }
-
