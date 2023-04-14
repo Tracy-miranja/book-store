@@ -184,7 +184,6 @@ Navbar
 .Mask {
   width: auto;
   height: 1.063rem;
-  background-color: #0290ff;
 }
 
 .Oval {
@@ -256,7 +255,7 @@ Navbar
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: var(--cool-blue);
+  color: #4386bf;
 }
 
 .Rectangle-2 {
@@ -356,7 +355,9 @@ Navbar
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: var(--cool-blue);
+  color: #4386bf;
+  background-color: #fff;
+  border: 0px;
 }
 
 .Remove {
@@ -370,7 +371,12 @@ Navbar
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: var(--cool-blue);
+  color: #4386bf;
+  background-color: #fff;
+  border: 0px;
+  border-right: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+ 
 }
 
 .Edit {
@@ -384,7 +390,11 @@ Navbar
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: var(--cool-blue);
+  color: #4386bf;
+  background-color: #fff;
+  border-color: #fff;
+  border: 0px;
+  padding: 2px;
 }
 
 .form {
@@ -405,4 +415,8 @@ Navbar
   align-content: center;
   border-bottom: #e5e5e5;
   box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
+}
+
+.profile{
+  color: #307bbe;
 }

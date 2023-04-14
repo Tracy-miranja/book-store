@@ -8,6 +8,7 @@ function App() {
     <section className="container">
       <Nav />
       <Routes>
+        <Route path="/" element={<AddBookForm />} />
         <Route path="/form" element={<AddBookForm />} />
         <Route path="/Categories" element={<Categories />} />
       </Routes>

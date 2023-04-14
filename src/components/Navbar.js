@@ -1,5 +1,7 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { MdPerson } from 'react-icons/md';
 
 function Nav() {
   return (
@@ -10,11 +12,15 @@ function Nav() {
           <Link to="/form">BOOKS</Link>
         </li>
         <li>
-          <Link to="/Categories">CATEGORIES</Link>
+          <Link to="/Categories" class="CATEGORIES Text-Style-9">CATEGORIES</Link>
         </li>
       </ul>
       <div className="Oval">
-        <div className="Mask"><div className="panel-bg" /></div>
+        <div className="Mask">
+
+          <MdPerson className="profile" />
+
+        </div>
       </div>
     </div>
   );
