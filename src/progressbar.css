@@ -1,11 +1,7 @@
 body {
   background-color: #f5f6fa;
-  padding: 30px;
+  padding: 5px;
   padding-top: 0;
-}
-
-.padding {
-  padding: 10rem !important;
 }
 
 .progress {

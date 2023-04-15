@@ -6,13 +6,14 @@ import { MdPerson } from 'react-icons/md';
 function Nav() {
   return (
     <div className="nav-container">
-      <div><h1>BOOKSTORE CMS</h1></div>
+
       <ul>
+        <div><h1>BOOKSTORE CMS</h1></div>
         <li>
           <Link to="/form">BOOKS</Link>
         </li>
         <li>
-          <Link to="/Categories" class="CATEGORIES Text-Style-9">CATEGORIES</Link>
+          <Link to="/Categories" className="CATEGORIES Text-Style-9">CATEGORIES</Link>
         </li>
       </ul>
       <div className="Oval">

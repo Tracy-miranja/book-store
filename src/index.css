@@ -120,6 +120,7 @@ Navbar
 .nav-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid gray;
   border-bottom: #e5e5e5;
@@ -187,26 +188,26 @@ Navbar
 }
 
 .Oval {
-  width: 2.813rem;
   height: 2.813rem;
-  margin: 0 0 0 41.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   padding: 0.875rem;
   border: solid 1px #e8e8e8;
   border-radius: 50px;
 }
 
 .panel-bg {
-  /* width: 87.5rem; */
   height: 5.938rem;
   margin: 0 0 2.375rem;
   padding: 1.438rem 6.188rem 1.688rem 6.25rem;
-  background-color: var(--white-two);
+  background-color: #e8e8e8;
 }
 
 .Lesson-Panel {
   width: fit-content;
   height: 10.625rem;
-  margin: 2.313rem 6.25rem 0;
+  margin: 2.313rem 0.15rem 0;
   padding: 2rem 9.188rem 1.625rem 1.688rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
@@ -231,15 +232,18 @@ Navbar
 }
 
 .Title {
-  width: 12.313rem;
-  height: 1.813rem;
-  margin: 0.188rem 20.188rem 0 0;
+  width: 100%;
+  /* height: 1.813rem; */
+  margin: 0.188rem 1rem 0 0;
   font-family: RobotoSlab, sans-serif;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
+  flex-wrap: wrap;
+  flex-grow: 1; 
+  margin: 10px;
   letter-spacing: -0.2px;
   color: var(--black-two);
 }
@@ -410,7 +414,6 @@ Navbar
 }
 
 .container {
-  width: 100%;
   align-content: center;
   border-bottom: #e5e5e5;
   box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
