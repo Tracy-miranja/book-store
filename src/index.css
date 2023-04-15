@@ -232,8 +232,7 @@ Navbar
 }
 
 .Title {
-  width: 100%;
-  /* height: 1.813rem; */
+  height: 1.813rem;
   margin: 0.188rem 1rem 0 0;
   font-family: RobotoSlab, sans-serif;
   font-size: 1.375rem;
@@ -242,8 +241,7 @@ Navbar
   font-style: normal;
   line-height: normal;
   flex-wrap: wrap;
-  flex-grow: 1; 
-  margin: 10px;
+  flex-grow: 1;
   letter-spacing: -0.2px;
   color: var(--black-two);
 }
